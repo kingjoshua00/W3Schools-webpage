@@ -1,0 +1,490 @@
+@font-face {
+    font-family: SourcesansPro;
+    src: url(../font/SourceSansPro-Regular.woff2);
+}
+
+@font-face {
+    font-family: Sourcesans600;
+    src: url(../font/source-sans-pro-v14-latin-600.woff2);
+}
+
+@font-face {
+    font-family: Sourcesans700;
+    src: url(../font/source-sans-pro-v14-latin-700.woff2);
+}
+
+* {
+    font-family: 'SourcesansPro';
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Sourcesans700';
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    height: 55px;
+    padding: 0px 15px;
+}
+
+.group1,
+.group2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.drop {
+    display: flex;
+    gap: 1rem;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown,
+.dropdown a {
+    text-align: center;
+    margin: auto 0px;
+    padding: 17px 8px;
+}
+
+.dropdown a:hover {
+    background-color: green;
+    color: white;
+    padding: 19px 8px;
+}
+
+.search {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.searchbox {
+    border: 1.3pt solid gray;
+    border-radius: 25px;
+    align-items: center;
+    padding: 1.5px 5px;
+}
+
+#searchbox {
+    border: 0;
+    outline: 0;
+    width: 140px;
+}
+
+#searchbox::placeholder {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.plans {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.fa-sparkles,
+.fa-code,
+.fa-cart-shopping {
+    color: blueviolet;
+}
+
+.icon {
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.icon:hover {
+    background-color: rgba(201, 143, 255, 0.402);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 25px;
+    padding: auto 12px;
+    padding-right: 15px;
+    background-color: rgba(79, 143, 87, 0.411);
+}
+
+.login:hover {
+    background-color: green;
+    height: auto;
+}
+
+.signup {
+    border-radius: 25px;
+    background-color: green;
+    height: 100%;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #282A35;
+    padding: 0 10px;
+}
+
+.courses a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.courses a:hover {
+    background: black;
+    padding: 5px;
+}
+
+section {
+    margin: 0;
+}
+
+.landingpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    background: url(../images/workspace.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    border: 1px solid transparent;
+    padding: 7% 0;
+}
+
+.landingpage .ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+.landingpage h1 {
+    /* font-family: Sourcesans700; */
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0;
+    margin: 15px;
+}
+
+.landingpage h3 {
+    font-size: 24px;
+}
+
+.landingpage h3 span {
+    color: #FFC0C7;
+    font-weight: bold;
+}
+
+.landingpage a {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: white;
+    background-color: #04AA6D;
+    font-weight: bolder;
+    padding: 15px 56px;
+    margin: 20px;
+}
+
+.landingpage p {
+    font-weight: bold;
+}
+
+.landingpage .process {
+    display: flex;
+    gap: 13rem;
+    margin-top: 80px;
+}
+
+.process div {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 1rem;
+    color: #D9EEE1;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.process div span {
+    color: white;
+    font-weight: normal;
+}
+
+.sect1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    gap: 1rem;
+    color: #282A35;
+    background-color: #D9EEE1;
+}
+
+.sect1 svg {
+    transform: translateY(-80px);
+    margin-bottom: -2%;
+}
+
+.sect1 h1 {
+    /* font-family: Sourcesans700; */
+    font-size: 45px;
+}
+
+.sect1 p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.sect1 img {
+    width: auto;
+    height: auto;
+    margin: 40px 40px 200px;
+}
+
+.sect2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    color: white;
+    background-color: #20232B;
+    font-weight: bold;
+    position: relative;
+    background-image: url(../images/path2.svg), url(../images/path1.svg);
+    background-repeat: no-repeat;
+    background-position: right, left;
+    background-size: 200px;
+    padding-bottom: 100px;
+}
+
+.sect2 .wave {
+    transform: translateY(-80px);
+}
+
+.sect2 h1 {
+    font-size: 50px;
+}
+
+.sect2 .switchwrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+.sect2 .switch {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    width: 60px;
+    background-color: #04AA6D;
+}
+
+.sect2 #switch{
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 25% 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    transition: translateX 1s linear;
+}
+
+.sect2 #switch:focus{
+    transform: translateX(100%);
+}
+
+.sect2 .w3plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sect2 .w3plus div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 17%;
+    text-align: start;
+    background: linear-gradient(70deg, #274A3E, #212A32);
+    border-radius: 20px;
+    padding: 30px 30px 80px;
+    position: relative;
+}
+
+.sect2 .w3plus div:hover{
+    transform: scale(1.03);
+}
+
+.w3plus .right, .w3plus .left{
+    height: 340px;
+    border: 1px solid gray;
+}
+
+.w3plus .middle{
+    border: 1px solid #04AA6D;
+}
+
+.w3plus div span{
+    color: #04AA6D;
+    font-size: x-large;
+}
+
+.w3plus div h1{
+    font-size: x-large;
+}
+
+.w3plus div h1 span{
+    color: grey;
+    font-size: small;
+}
+
+hr{
+    border-color: grey;
+}
+
+.w3plus div p{
+    font-weight: normal;
+}
+
+.w3plus div a{
+    display: flex;
+    align-self: center;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    padding: 10px 45px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+}
+
+.sect3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;   
+}
+
+.sect3 .promo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 94%;
+    margin: 30px;
+    padding:  40px;
+    border: 1px solid;
+    border-radius: 25px;
+    color: #FFC0C7;
+    background-color: #20232B;
+    font-weight: bold;
+}
+
+.sect3 .promo .discount p{
+    color: white;
+    font-size: large;
+}
+
+.discount h1{
+    font-size: 40px;
+
+}
+
+.promocode{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.promocode span{
+    color: black;
+    background-color: #FFC0C7;
+    padding: 10px 36px;
+    border-radius: 50px;
+}
+
+.sect3 b{
+    font-weight: bolder;
+    font-size: large;
+    margin-top: 20px;
+}
+
+.sect3 a{
+    color: #04AA6D;
+    margin-bottom: 50px;
+}
+
+.sect4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../images/background.webp);
+}
+
+.sect4 .kAI, .sect4 .bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+.kAI h1{
+    font-size: 100px;
+    color: #99CBCB;
+}
+
+.kAI h1 span{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+}
+
+.kAI h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.kAI h2 span{
+    color: burlywood ;
+}
+
+.kAI img{
+    width: auto;
+    height: auto;
+}
