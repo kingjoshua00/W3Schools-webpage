@@ -288,6 +288,11 @@ a {
     position: relative;
 }
 
+.example .imgss{
+    width: 100%;
+    height: 100%;
+}
+
 .example a {
     border: 1px solid transparent;
     background-color: #059862;
@@ -673,6 +678,8 @@ footer {
 
 .links {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 4rem;
 }
 

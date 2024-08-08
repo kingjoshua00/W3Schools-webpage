@@ -154,6 +154,7 @@ a {
     color: white;
     text-decoration: none;
     padding: 5px;
+    text-align: center;
 }
 
 .courses a:hover {
@@ -213,6 +214,7 @@ section {
     font-weight: bolder;
     padding: 15px 56px;
     margin: 20px;
+    text-align: center;
 }
 
 .landingpage p {
@@ -310,7 +312,7 @@ section {
     background-color: #04AA6D;
 }
 
-.sect2 #switch{
+.sect2 #switch {
     display: block;
     border: 1px solid transparent;
     border-radius: 50px;
@@ -321,18 +323,18 @@ section {
     transition: translateX 1s linear;
 }
 
-.sect2 #switch:focus{
+.sect2 #switch:focus {
     transform: translateX(100%);
 }
 
-.sect2 .w3plus{
+.sect2 .w3plus {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
 
-.sect2 .w3plus div{
+.sect2 .w3plus div {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
@@ -344,42 +346,43 @@ section {
     position: relative;
 }
 
-.sect2 .w3plus div:hover{
+.sect2 .w3plus div:hover {
     transform: scale(1.03);
 }
 
-.w3plus .right, .w3plus .left{
+.w3plus .right,
+.w3plus .left {
     height: 340px;
     border: 1px solid gray;
 }
 
-.w3plus .middle{
+.w3plus .middle {
     border: 1px solid #04AA6D;
 }
 
-.w3plus div span{
+.w3plus div span {
     color: #04AA6D;
     font-size: x-large;
 }
 
-.w3plus div h1{
+.w3plus div h1 {
     font-size: x-large;
 }
 
-.w3plus div h1 span{
+.w3plus div h1 span {
     color: grey;
     font-size: small;
 }
 
-hr{
+hr {
     border-color: grey;
 }
 
-.w3plus div p{
+.w3plus div p {
     font-weight: normal;
 }
 
-.w3plus div a{
+.w3plus div a {
     display: flex;
     align-self: center;
     border: 1px solid whitesmoke;
@@ -388,24 +391,25 @@ hr{
     color: white;
     position: absolute;
     bottom: 20px;
+    text-align: center
 }
 
-.sect3{
+.sect3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: white;   
+    background-color: white;
 }
 
-.sect3 .promo{
+.sect3 .promo {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-around;
     width: 94%;
     margin: 30px;
-    padding:  40px;
+    padding: 40px;
     border: 1px solid;
     border-radius: 25px;
     color: #FFC0C7;
@@ -413,78 +417,646 @@ hr{
     font-weight: bold;
 }
 
-.sect3 .promo .discount p{
+.sect3 .promo .discount p {
     color: white;
     font-size: large;
 }
 
-.discount h1{
+.discount h1 {
     font-size: 40px;
 
 }
 
-.promocode{
+.promocode {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.promocode span{
+.promocode span {
     color: black;
     background-color: #FFC0C7;
     padding: 10px 36px;
     border-radius: 50px;
 }
 
-.sect3 b{
+.sect3 b {
     font-weight: bolder;
     font-size: large;
     margin-top: 20px;
 }
 
-.sect3 a{
+.sect3 a {
     color: #04AA6D;
     margin-bottom: 50px;
+    text-align: center;
 }
 
-.sect4{
+.sect4 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 15rem;
     background-image: url(../images/background.webp);
 }
 
-.sect4 .kAI, .sect4 .bot{
+.sect4 .kAI,
+.sect4 .bot {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    width: 300px;
     color: white;
 }
 
-.kAI h1{
+.kAI h1 {
     font-size: 100px;
     color: #99CBCB;
 }
 
-.kAI h1 span{
+.kAI h1 span {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 150px;
     font-weight: 700;
 }
 
-.kAI h2{
+.kAI h2 {
     font-size: 32px;
     font-weight: bold;
 }
 
-.kAI h2 span{
-    color: burlywood ;
+.kAI h2 span {
+    color: burlywood;
 }
 
-.kAI img{
+.kAI p {
+    font-weight: 500;
+}
+
+.kAI a {
+    border-radius: 50px;
+    padding: 15px 40px;
+    width: 150px;
+    font-weight: bold;
+    color: white;
+    background: #04AA6D;
+    text-align: center;
+}
+
+.kAI img {
+    width: 150%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.sect4 .bot p {
+    border: 2px solid #04AA6D;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.1);
+    animation: lift 1s ease-out 1;
+}
+
+@keyframes lift {
+    0% {
+        transform: translateY(150px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.sect5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 200px;
+    gap: 1rem;
+}
+
+.sect5 h1 {
+    font-size: 42px;
+}
+
+.sect5 p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sect5 p span {
+    font-weight: bolder;
+}
+
+.sect5 img {
+    width: 40%;
+    height: auto;
+    margin: 40px;
+}
+
+.sect5 a {
+    border-radius: 50px;
+    padding: 15px 40px;
+    width: 150px;
+    font-weight: bold;
+    color: white;
+    background: #04AA6D;
+    text-align: center;
+}
+
+.sect6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 100px;
+    background-color: #D9EEE1;
+    position: relative;
+}
+
+.sect6 svg {
+    position: absolute;
+    top: -90px;
+}
+
+.sect6 h1 {
+    font-size: 30px;
+}
+
+.sect6 p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.sect6 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sect6 div img {
+    width: auto;
+    height: auto;
+}
+
+.sect6 a {
+    border: 1px solid #04AA6D;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-weight: bolder;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+}
+
+.sect6 .black {
+    border-color: #20232B;
+    color: white;
+    background-color: #20232B;
+}
+
+.sect7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 50px 0 0;
+    color: white;
+    background-color: #04AA6D;
+    font-size: 18px;
+    position: relative;
+}
+
+.sect7 svg {
+    position: absolute;
+    top: -100px;
+}
+
+.sect7 div {
+    display: flex;
+    /* align-items: center; */
+}
+
+.sect7 span {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 20px;
+    text-align: start;
+}
+
+.sect7 img {
+    width: auto;
+    height: auto;
+}
+
+.sect8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282A35;
+    position: relative;
+}
+
+.sect8 svg {
+    position: absolute;
+    top: -50px;
+}
+
+.sect8 img {
+    width: auto;
+    height: auto;
+}
+
+.sect9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #D9EEE1;
+    padding: 50px;
+    font-weight: bold;
+}
+
+.sect9 h1 {
+    font-size: 35px;
+}
+
+.sect9 .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    column-gap: 5rem;
+    align-items: center;
+    margin: 50px;
+}
+
+.sect9 a {
+    border-radius: 50px;
+    padding: 15px 40px;
+    width: 150px;
+    font-weight: bold;
+    color: white;
+    background: #04AA6D;
+    text-align: center;
+}
+
+.sect10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    font-weight: bold;
+}
+
+.sect10 div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.sect10 img {
+    width: auto;
+    height: 264px;
+}
+
+.sect10 a {
+    border-radius: 50px;
+    padding: 15px 40px;
+    width: 150px;
+    font-weight: bold;
+    color: white;
+    background: #04AA6D;
+    text-align: center;
+}
+
+.filenavigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 70px;
+    background-color: #D9EEE1;
+    font-weight: bold;
+}
+
+.filenavigator img {
+    height: 300px;
+    width: auto;
+}
+
+.filenavigator div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filenavigator a {
+    border-radius: 50px;
+    padding: 15px 40px;
+    width: 150px;
+    font-weight: bold;
+    background-color: #20232B;
+    color: white;
+    text-align: center;
+    margin: 40px 0 60px;
+}
+
+.debug,
+.env,
+.analytics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding: 80px;
+    color: white;
+    background-color: #04AA6D;
+    font-weight: bold;
+}
+
+.debug div,
+.env div,
+.analytics div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.debug a,
+.env a,
+.analytics a {
+    border-radius: 50px;
+    padding: 15px 40px;
+    width: 150px;
+    font-weight: bold;
+    background-color: #20232B;
+    color: white;
+    text-align: center;
+    margin: 40px 0 60px;
+}
+
+.debug img {
+    width: auto;
+    height: 223px;
+}
+
+.database,
+.package {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding: 80px;
+    color: black;
+    background-color: #D9EEE1;
+    font-weight: bold;
+}
+
+.database img {
+    height: 228px;
+    width: auto;
+}
+
+.database div,
+.package div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.database a,
+.package a, .inspired a {
+    border-radius: 50px;
+    padding: 15px 40px;
+    width: 150px;
+    font-weight: bold;
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+    margin: 40px 0 60px;
+}
+
+.env img {
+    height: 300px;
+    width: auto;
+}
+
+.package img {
+    height: auto;
+    width: auto;
+}
+
+.analytics {
+    position: relative;
+}
+
+.analytics svg {
+    position: absolute;
+    bottom: -70px;
+    z-index: 10;
+}
+
+.analytics img {
+    height: 230px;
+    width: auto;
+}
+
+.community {
+    background-image: url(../images/community-image.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.community .inspired {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bolder;
+    color: white;
+    background-color: #000000b4;
+    height: 665px;
+}
+
+.inspired h1{
+    font-size: 36px;
+}
+
+.inspired p{
+    font-size: larger;
+}
+
+.inspired a{
+}
+
+.com-img {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #D9EEE1;
+    position: relative;
+}
+
+.com-img img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: -230px;   
+}
+
+.FAQs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    background-color: #282A35;
+    position: relative;
+}
+
+.FAQs svg{
+    position: absolute;
+    top: -80px;
+}
+
+.FAQs h1{
+    color: #FFC0C7;
+    font-size: 36px;
+    margin: 25px;
+}
+
+.FAQs .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 50%;
+}
+
+.FAQs .container .fa-chevron-down{
+    padding: 0 10px;
+}
+
+.FAQs .container b{
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #F3ECEA;
+    width: 100%;
+    transition: background-color 0.5s linear;
+}
+
+.FAQs .container b:hover{
+    background-color: #FFF4A3;
+}
+
+
+
+footer {
+    background-image: url(../images/background.webp);
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.logo-nav {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 60px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+
+
+.links>a {
+    color: yellow;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.links>a:hover {
+    text-decoration: underline;
+}
+
+.Reference {
+    display: flex;
+    gap: 8rem;
+    margin-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.all {
+    color: white;
+    margin-left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row>a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+.row>a:hover {
+    color: yellow;
+}
+
+
+.social>a {
+    color: white;
+    font-size: small;
+}
+
+.social>a:hover {
+    color: yellow;
+}
+
+
+.social {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 1rem;
+}
+
+.man {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: auto;
     height: auto;
 }
