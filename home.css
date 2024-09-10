@@ -16,12 +16,14 @@
 body {
     font-family: 'Source Sans Pro Topnav', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 
 }
 
 header {
     position: sticky;
     top: 0px;
+    width: 100vw;
     z-index: 100;
 }
 
@@ -33,6 +35,10 @@ nav {
     font-size: 16px;
     height: 55px;
     padding: 0px 15px;
+}
+
+.mobile-nav{
+    display: none;
 }
 
 .group1,
@@ -157,6 +163,10 @@ a {
     padding: 5px;
 }
 
+.m-courses{
+    display: none;
+}
+
 .sect1 {
     display: flex;
     flex-direction: column;
@@ -164,7 +174,7 @@ a {
     height: auto;
     padding: 150px;
     background-image: url(./images/background.webp);
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-size: contain;
     text-align: center;
 }
@@ -383,10 +393,8 @@ a {
 .sect3{
     display: flex;
     flex-direction: column;
-    /* gap: 80px; */
     background-color: #282A35;
     color: black;
-    padding: 80px 0;
 }
 
 .editor {
@@ -455,7 +463,6 @@ a {
     background-color: #282A35;
     font-weight: bold;
     padding: 12px 50px;
-    /* margin: 10px; */
     border-radius: 25px;
     font-family: 'Source Sans Pro Topnav', sans-serif;
 }
@@ -529,13 +536,12 @@ a {
 
 .kickstart{
     background-color:#282A35;
-    padding: 24px;
+    padding: 100px;
     position: relative;
 }
 
 .kickstart p{
     color: pink;
-    margin: 60px 110px;
     font-size: 58px;
     font-weight: bold;
 }
@@ -545,7 +551,6 @@ a {
     font-weight: bold;
     background-color:#059862;
     padding: 20px 50px;
-    margin: auto 110px;
     border-radius: 50px;
 }
 
@@ -556,23 +561,20 @@ a {
     background-color: white;
     align-items: center;
     text-align: center;
-    padding: 80px;
+    padding: 90px;
 }
 
 .howtosection h1{
     font-size: 60px;
     font-weight: 700px;
-    margin: 10px;
 }
 
 .howtosection h4{
-    margin: 10px;
     font-size: large;
     font-weight: bold;
 }
 
 .howtosection p{
-    margin: 10px;
     font-weight: bold;
 }
 
@@ -598,13 +600,11 @@ a {
     
 }
 
-
 #slider{
     display: flex;
     flex-direction: column;
     width: 60%;
     overflow: hidden;
-    border: 1px soli tomato;
     background-color: #f1f1f1;
     padding: 25px 8px;
 }
@@ -648,7 +648,6 @@ a {
 }
 .howtosection a{
     padding: 20px 180px;
-    /* margin: 30px; */
     background-color: #282a35;
     border-radius: 20px;
     color: white;
@@ -660,15 +659,11 @@ a {
     background-color: #059862;
 }
 
-
-
 footer {
     background-image: url(./images/background.webp);
     height: 100vh;
     position: relative;
 }
-
-
 
 .logo-nav {
     display: flex;
@@ -682,8 +677,6 @@ footer {
     justify-content: center;
     gap: 4rem;
 }
-
-
 
 .links>a {
     color: yellow;

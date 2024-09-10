@@ -894,7 +894,7 @@ hr {
     gap: 1rem;
     font-weight: bolder;
     color: white;
-    background-color: #000000b4;
+    background-color: #424141b6;
     height: 665px;
 }
 
@@ -906,8 +906,8 @@ hr {
     font-size: larger;
 }
 
-.inspired a{
-}
+/* .inspired a{
+} */
 
 .com-img {
     width: 100%;
