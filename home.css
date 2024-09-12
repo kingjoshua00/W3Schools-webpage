@@ -733,6 +733,18 @@ footer {
     gap: 1rem;
 }
 
+.m-social{
+    display: none;
+}
+
+.aboutw3{
+    font-size: small;
+}
+
+.m-aboutw3{
+    display: none;
+}
+
 .man {
     position: absolute;
     bottom: 0;

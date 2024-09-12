@@ -270,6 +270,46 @@ footer{
     text-align: center;
 }
 
+.last-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social{
+    display: none;
+}
+
+.m-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.m-social .logo a{
+    color: white;
+    font-size: larger;
+    margin: 5px;
+}
+
+.m-social a:hover {
+    color: yellow;
+}
+
+.aboutw3{
+    display: none;
+}
+
+.m-aboutw3{
+    display: block;
+    font-size: small;
+    width: 80%;
+    margin: 20px;
+    text-align: center;
+}
+
 .man{
     position: initial;
     width: 100%;
